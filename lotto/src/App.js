@@ -10,7 +10,6 @@ function App() {
       <h2>Generating Lucky Numbers</h2>
       <p>
         <LuckyNumbers />
-        <LuckyNumbers />
       </p>
     </div>
   );

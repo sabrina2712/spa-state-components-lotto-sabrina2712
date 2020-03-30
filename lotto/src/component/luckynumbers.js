@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import faker from "faker";
 
 class LuckyNumbers extends Component {
   constructor(props) {
@@ -9,15 +8,8 @@ class LuckyNumbers extends Component {
   }
 
   createNumbers() {
-    let numbers = faker.random.number({
-      min: 1,
-      max: 6
-    });
+    let numbers = Math.floor(Math.random() * 10);
     console.log(numbers);
-    // this.firstNumbers = faker.random.number({
-    //   min: 1,
-    //   max: 49
-    // });
   }
   render() {
     return <button className="input" onClick={this.createNumbers}></button>;
